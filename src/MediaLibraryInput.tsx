@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Labeled, WrapperField } from 'react-admin';
-import { useTheme } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 import { MediaLibraryInputContents } from './MediaLibraryInputContents';
 import type { MediaLibraryOptions } from './options';
 
@@ -18,8 +18,8 @@ export const MediaLibraryInput: FC<MediaLibraryInputProps> = ({
   return (
     <Labeled>
       <WrapperField label={label}>
-        <div
-          style={{
+        <Box
+          sx={{
             border: `1px solid ${theme.palette.grey[300]}`,
             marginBottom: theme.spacing(4),
             width: 300,
@@ -27,9 +27,10 @@ export const MediaLibraryInput: FC<MediaLibraryInputProps> = ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            position: 'relative',
           }}>
           <MediaLibraryInputContents source={source} />
-        </div>
+        </Box>
       </WrapperField>
     </Labeled>
   );

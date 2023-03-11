@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { RaRecord, useInput, useGetOne } from 'react-admin';
-import { Box, IconButton, useTheme } from '@mui/material';
+import { IconButton, useTheme } from '@mui/material';
 import Delete from '@mui/icons-material/Delete';
 import { useFormContext } from 'react-hook-form';
 import { MediaLibraryModal } from './MediaLibraryModal';
@@ -40,7 +40,7 @@ export const MediaLibraryInputContents: FC<MediaLibraryInputContentsProps> = ({
   const { src, title, width, height, crop } = data ?? {};
 
   return (
-    <Box sx={{ position: 'relative' }}>
+    <>
       <MediaLibraryModal
         open={modalOpen}
         close={onClose}
@@ -72,6 +72,6 @@ export const MediaLibraryInputContents: FC<MediaLibraryInputContentsProps> = ({
           <Delete />
         </IconButton>
       )}
-    </Box>
+    </>
   );
 };
