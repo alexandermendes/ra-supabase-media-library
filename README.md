@@ -34,8 +34,8 @@ const supabase = createClient(
 </MediaLibraryProvider>
 ```
 
-Use the `` to add an input that opens the media library for you to select and
-upload images or videos:
+Use the `MediaLibraryInput` to add an input that opens the media library for
+you to select and upload images or videos:
 
 ```tsx
 import { MediaLibraryInput } from 'ra-supabase-media-library';
