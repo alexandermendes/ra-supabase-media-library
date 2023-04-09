@@ -28,6 +28,7 @@ export const MediaLibraryInput: FC<MediaLibraryInputProps> = ({
             alignItems: 'center',
             justifyContent: 'center',
             position: 'relative',
+            overflow: 'hidden',
           }}>
           <MediaLibraryInputContents source={source} />
         </Box>
