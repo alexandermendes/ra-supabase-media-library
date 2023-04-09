@@ -83,7 +83,7 @@ const getFileDimensions = async (file: File): Promise<FileDimensions> => {
   return { height: video.videoHeight, width: video.videoWidth };
 };
 
-const getConvertedFileName = (file: File, suffix?: string) => {
+const getConvertedFileName = (file: File, suffix: string = '') => {
   const fileParts = file.name.split('.');
   const ext = fileParts.pop();
 
