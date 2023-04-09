@@ -53,6 +53,7 @@ export const MediaLibraryModalList: FC<MediaLibraryModalListProps> = ({
               selectedRecord === record
                 ? `0 0 0 4px ${theme.palette.primary.main}`
                 : undefined,
+            overflow: 'hidden',
             aspectRatio,
           }}>
           <div
